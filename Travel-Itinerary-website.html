@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Explorer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+    header { background-color: #34495e; color: white; padding: 1em; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    main { padding: 20px; }
+    h1, h2 { color: #34495e; }
+    img { width: 45%; margin: 10px 2.5%; }
+    footer { background-color: #34495e; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
+    .container { display: flex; flex-wrap: wrap; justify-content: center; }
+    .page { display: none; }
+    .active { display: block; }
+    button { background-color: #34495e; color: white; padding: 10px 20px; border: none; margin: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>World Explorer</h1>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('paris')">Paris</a>
+      <a href="#" onclick="showPage('kyoto')">Kyoto</a>
+      <a href="#" onclick="showPage('marrakech')">Marrakech</a>
+      <a href="#" onclick="showPage('new-york')">New York</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <main id="home" class="page active">
+    <h2>Welcome to World Explorer</h2>
+    <p>Join us in exploring some of the most captivating cities around the world. Discover their culture, history, and beauty to inspire your next journey.</p>
+    <div class="container">
+      <img src="https://source.unsplash.com/600x400/?travel" alt="Travel" />
+      <img src="https://source.unsplash.com/600x400/?world" alt="World" />
+    </div>
+  </main>
+
+  <!-- Paris -->
+  <main id="paris" class="page">
+    <h2>Paris, France</h2>
+    <p>Known as the "City of Light," Paris offers timeless charm with its art, fashion, gastronomy, and culture. From the iconic Eiffel Tower to hidden cafes along narrow alleys, Paris exudes romance and history at every corner.</p>
+    <div class="container">
+      <img src="https://source.unsplash.com/600x400/?paris" alt="Paris city view" />
+      <img src="https://source.unsplash.com/600x400/?eiffel-tower" alt="Eiffel Tower" />
+    </div>
+  </main>
+
+  <!-- Kyoto -->
+  <main id="kyoto" class="page">
+    <h2>Kyoto, Japan</h2>
+    <p>Kyoto, once the capital of Japan, is known for its classical Buddhist temples, gardens, imperial palaces, Shinto shrines, and traditional wooden 		houses. It's a city where centuries-old traditions blend seamlessly with modern life.</p>
+    <div class="container">
+      <img src="https://source.unsplash.com/600x400/?kyoto" alt="Kyoto city view" />
+      <img src="https://source.unsplash.com/600x400/?japan-temple" alt="Japanese temple" />
+    </div>
+  </main>
+
+  <!-- Marrakech -->
+  <main id="marrakech" class="page">
+    <h2>Marrakech, Morocco</h2>
+    <p>Marrakech is a vibrant city known for its rich culture bustling souks, stunning architecture, and delicious 	food. This city sits at the foot of  	the Atlas mountains, providing stunning views and opportunities for hiking and exploring.</p>
+    <div class="container">
+      <img src="https://source.unsplash.com/600x400/?marrakech" alt="Marrakech view" />
+      <img src="https://source.unsplash.com/600x400/?table-mountain" alt="Table Mountain" />
+    </div>
+  </main>
+
+  <!-- New York -->
+  <main id="new-york" class="page">
+    <h2>New York City, USA</h2>
+    <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is 	Manhattan, a densely populated borough that’s among the world’s major commercial, financial, and cultural 	centers.</p>
+    <div class="container">
+      <img src="https://source.unsplash.com/600x400/?new-york" alt="New York city view" />
+      <img src="https://source.unsplash.com/600x400/?times-square" alt="Times Square" />
+    </div>
+  </main>
+
+  <!-- Contact -->
+  <main id="contact" class="page">
+    <h2>Contact Us</h2>
+    <p>Have questions or need travel recommendations? Reach out to us today!</p>
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required /><br/>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" required></textarea><br />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="container">
+      <img src="https://source.unsplash.com/600x400/?contact" alt="Contact" />
+      <img src="https://source.unsplash.com/600x400/?travel-help" alt="Travel help" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 World Explorer</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
