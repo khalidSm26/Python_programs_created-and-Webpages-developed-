@@ -1,6 +1,6 @@
 # Weather-Based Outfit Advisor
-# Author: [Your Name]
-# Date: [Today's Date]
+# Author: [Khalid Smouni]
+# Date: [6/28/2025]
 # Description:
 # This program suggests an outfit based on the user's input of temperature, weather type, and wind speed.
 
@@ -76,3 +76,4 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
+
