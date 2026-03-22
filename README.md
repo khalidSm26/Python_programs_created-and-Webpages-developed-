@@ -1,18 +1,17 @@
-# Python and Web Projects
+# Weather Outfit Adviser
 
-## Overview
-This repository contains Python programs and HTML and CSS web pages developed as part of my school coursework.
+Python program that suggests an outfit based on the user's input of temperature, weather type, and wind speed.
 
-## Python Files
-- Python scripts demonstrating programming concepts.
+## Features
 
-## Web Pages
-- HTML, CSS and JavaScript pages demonstrating web development concepts.
+- Suggests outfits based on user-provided **temperature**, **weather conditions** (sunny, rainy, snowy, etc.), and **wind speed**  
+- Provides layered clothing recommendations for comfort and practicality  
+- Simple command-line interface (CLI) for easy user input and output  
+- Easy to extend with new clothing rules or customization
+- Lightweight Python application with minimal dependencies  
 
-## Technologies Used
-- Python
-- PHP
-- HTML
-- CSS
-- Javascript
-- GitHub
+## How to Run
+
+1. Clone the repository:
+```bash
+git clone <repo-url>
