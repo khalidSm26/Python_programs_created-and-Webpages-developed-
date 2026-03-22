@@ -14,4 +14,4 @@ Python program that suggests an outfit based on the user's input of temperature,
 
 1. Clone the repository:
 ```bash
-git clone <repo-url>
+git clone  https://github.com/khalidSm26/weather-outfit-adviser.git
