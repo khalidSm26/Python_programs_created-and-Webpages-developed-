@@ -15,3 +15,15 @@ Python program that suggests an outfit based on the user's input of temperature,
 1. Clone the repository:
 ```bash
 git clone  https://github.com/khalidSm26/weather-outfit-adviser.git
+
+2. Run the program:
+Locate the file named main.py in the downloaded folder
+Open a terminal or command prompt in that folder and run:
+
+python main.py
+Follow the prompts in the CLI:
+Enter temperature (°C)
+Enter weather type (sunny, rainy, snowy, cloudy, etc.)
+Enter wind speed (km/h)
+
+The program will recommend an outfit based on your input.
